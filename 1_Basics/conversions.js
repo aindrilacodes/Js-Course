@@ -8,9 +8,12 @@ console.log(valueInNumber);
 // "33anc" converts to NAN
 //true converts to 1
 //Null converts to 0
+// false is 0
 let isLoggedIn=1
 let bisLoggedIn=Boolean(isLoggedIn)
 console.log(bisLoggedIn);
 console.log(typeof bisLoggedIn);
 let num=String(33)
 console.log(typeof num);
+let p="aindrila"
+console.log(p);
