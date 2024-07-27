@@ -5,6 +5,7 @@ reference types:memory refererence are accessed
 Array,Objects,Functions
 Js is dynamically typed language
 */
+/*
 const id=Symbol('123')
 const id1=Symbol('123')
 console.log(id==id1);
@@ -18,4 +19,19 @@ console.log(def);
 const myFunc=function() {
     console.log("hello world");
 }
-console.log(typeof myFunc);
+console.log(typeof myFunc);*/
+/****************memory management***********
+ stack(Primitive),Heap(Non-Primitive)
+ 
+ */
+let myChannel="Aindrila Dutta"
+let anotherchannel="duttaspeakes"
+anotherchannel="aindrilacodes"
+console.log(anotherchannel);
+let user={
+    email:"sutta8465.in",
+    upi:"user@ybl"
+}
+let user2=user;
+user2.email="aindrila@gmail.com"
+console.log(user);
