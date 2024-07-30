@@ -21,4 +21,4 @@ console.log("B",myArray);
 const myn2= myArray.splice(1,3)
 //changes the original array
 console.log("C",myArray);
-console.log(myn2);
+console.log(myn2); 
