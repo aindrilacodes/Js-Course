@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM DOM</title>
+</head>
+<body style="background-color: black;color: whitesmoke;">
+    <ul class="language">
+<li>JAVA</li>
+    </ul>
+</body>
+<script>
+    //takes more time..copies it everytime
+   /* function addlanguage(langname){
+        const lists=document.createElement('li');
+        lists.innerHTML= `${langname}`
+        document.querySelector(".language").appendChild(lists)
+       
+    }
+    addlanguage("Python")
+    addlanguage("Javascript")*/
+    //optimized approach use this always
+   function addlanguage(langname){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector(".language").appendChild(li)
+    }
+    addlanguage("Python")
+    addlanguage("Javascript")
+    addlanguage('goLang')
+    //editing them
+   const secondlang= document.querySelector("li:nth-child(2)")
+   //secondlang.innerHTML="Mojo"
+   console.log(secondlang);
+  let newli= document.createElement('li')
+  newli.textContent="Mojo"
+  secondlang.replaceWith(newli)
+//another example
+const firstlang=document.querySelector('li:first-child')
+firstlang.outerHTML='<li>TypeScript</li>'
+//remove
+const lastlang=document.querySelector("li:last-child")
+lastlang.remove();
+</script>
+</html>
