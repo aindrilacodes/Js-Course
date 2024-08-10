@@ -1,0 +1,42 @@
+.button{
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid black;
+    display: inline;
+    height: 100px;
+    width: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   /* background-color: beige; */
+    height: 150px;
+    width: 100%vw;
+    /* border: 2px solid black; */
+}
+#grey{
+    background-color: lightgray;
+}
+#white{
+    background-color: white;
+}
+#lavender{
+    background-color: lavender;
+}
+#beige{
+    background-color: beige;
+}
+#pink{
+    background-color: pink;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+
