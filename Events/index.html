@@ -32,17 +32,36 @@
    document.getElementById('owl').addEventListener('click',function(e){
     console.log("owl clicked")
     e.stopPropagation
-   })*/
+   })
    document.getElementById("google").addEventListener('click',function(e)
    {
     e.preventDefault();
     e.stopPropagation();
     console.log("google clicked")
       
-   },false)
+   },false)*/
    //time,timestamp,default prevented
    //target,toElement,srcElement,currentTarget
    //client position,offset,screenX,Screeny
    //altKey,ctrlkey,shiftkey,keycode
+
+document.querySelector('#images').addEventListener('click',function (e){
+   console.log(e.target.tagName)
+   
+    if(e.target.tagName==='IMG')
+    { console.log(e.target.id)
+        let removeit=e.target.parentNode;
+        removeit.remove();
+    }
+   // removeit.remove();
+  //  removeit.parentNode.removeChild(removeit)
+},false)
+
+
+
+
+
+
+
 </script>
 </html>
