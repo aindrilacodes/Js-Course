@@ -35,3 +35,4 @@ let user={
 let user2=user;
 user2.email="aindrila@gmail.com"
 console.log(user);
+console.log(parseInt('1004dfvd'))
